@@ -305,7 +305,7 @@ _(Refer to [docs/Power_Query_and_DAX.md](docs/Power_Query_and_DAX.md) for full c
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/customer-churn-prediction.git
+git clone https://github.com/Tanuj-Narula/customer-churn-prediction.git
 cd customer-churn-prediction
 ```
 
