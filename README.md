@@ -25,7 +25,7 @@ An end-to-end telecom customer churn intelligence system combining **SQL Server 
 - [Key Business Insights & Recommendations](#-key-business-insights--recommendations)
 - [Installation & Setup](#-installation--setup)
 - [Tech Stack](#-tech-stack)
-- [Contributing & License](#-contributing--license)
+- [Contributing](#-contributing)
 
 ---
 
@@ -93,12 +93,12 @@ This project delivers a **full-lifecycle data intelligence solution** that trans
 
 ### Architecture Pipeline Breakdown
 
-| Pipeline Stage | Component | Key Operations | Output / Deliverable |
-|---|---|---|---|
-| **1. Data Ingestion** | CSV Dataset | Raw telecom records import (32 columns, 6,418 rows) | `Customer_Data.csv` |
-| **2. Storage & ETL** | Microsoft SQL Server | Null audits, category distribution, `ISNULL` cleansing | `prod_Churn`, `vw_ChurnData`, `vw_JoinData` |
-| **3. Machine Learning** | Python (Scikit-Learn, XGBoost) | Preprocessing, feature encoding, model evaluation | Evaluated models & churn risk predictions |
-| **4. BI & Analytics** | Power BI Desktop | Power Query transformations, DAX business logic | Multi-page interactive executive dashboards |
+| Pipeline Stage          | Component                      | Key Operations                                         | Output / Deliverable                        |
+| ----------------------- | ------------------------------ | ------------------------------------------------------ | ------------------------------------------- |
+| **1. Data Ingestion**   | CSV Dataset                    | Raw telecom records import (32 columns, 6,418 rows)    | `Customer_Data.csv`                         |
+| **2. Storage & ETL**    | Microsoft SQL Server           | Null audits, category distribution, `ISNULL` cleansing | `prod_Churn`, `vw_ChurnData`, `vw_JoinData` |
+| **3. Machine Learning** | Python (Scikit-Learn, XGBoost) | Preprocessing, feature encoding, model evaluation      | Evaluated models & churn risk predictions   |
+| **4. BI & Analytics**   | Power BI Desktop               | Power Query transformations, DAX business logic        | Multi-page interactive executive dashboards |
 
 ---
 
@@ -235,7 +235,7 @@ Tracks high-level telecom metrics, revenue at risk, churn distribution by geogra
 
 Monitors predicted churners from the machine learning model, customer vulnerability brackets, and service add-on adoption.
 
-![Prediction Dashboard](assets/images/Prediction.PNG)
+![Prediction Dashboard](assets/images/Prediction.jpg)
 
 ---
 
